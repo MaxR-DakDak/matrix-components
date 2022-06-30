@@ -1,0 +1,46 @@
+.vue-component-table__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.vue-component-table__header > * {
+    background-color: rgb(244, 244, 244);
+    color: black;
+    text-align: left;
+    padding: 10px 5px;
+    min-width: 50px;
+    border-right: 1px solid rgb(210, 210, 210);
+    cursor: pointer;
+    user-select: none;
+    max-width: 150px;
+}
+.vue-component-table__header > th:first-child {
+    width: fit-content;
+}
+.vue-component-table__search {
+    margin-top: 5px;
+    display: inline-flex;
+}
+.vue-component-table__search > input {
+    width: 100%;
+    font-size: 12px;
+}
+.vue-component-table__search > button.active {
+    transform: rotate(180deg);
+}
+.vue-component-table__columns > * {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid rgb(210, 210, 210);
+}
+.vue-component-table__columns > td > input {
+    text-align: center;
+    max-width: 50px;
+}
+.vue-component-table__columns > td:last-child, .vue-component-table__header > th:last-child {
+    border-right: none;
+}
+.vue-component-table__columns:nth-child(2n) {
+    background-color: rgb(244, 244, 244);
+}
